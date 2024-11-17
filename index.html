@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aaron Jason Portofolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/Logoaaron.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skill">SKILL</a></li>
+                        <li><a href="#projects">PROJECT</a></li>
+                        <li><a href="#experience">EXPERIENCE</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Portofolio</h1>
+                <p>This is a portfolio of Aaron Jason</p>
+                <a href="AaronJason_CV(ATS).pdf" target="_blank" class="hero-btn">View CV</a>
+            </div>
+        </section>
+
+        <section class="bio" id="about">
+            <div class="bio-container">
+                <div class="bio-photo">
+                    <img src="images/foto.jpg" alt="Aaron Jason">
+                </div>
+                <h1>About Myself</h1>
+                <p>Graduate of Bachelor's Degree with GPA 3.69 in Information Technology (Computer Science) at Esa Unggul University with experience in Software Quality Assurance and Android application design.</p>
+            </div>
+        </section>
+
+        <section class="mydata" id="skill">
+            <h1>Skills</h1>
+            <p>Skills that I learned from my internship and studies</p>
+            <div class="row">
+                <div class="bio-col">
+                    <h3>Software Quality Assurance</h3>
+                    <p>I learned Software Quality Assurance from training for getting a Certificate Of Competence by BNSPP and through my internship at PT. Indomaco Prismatama from August to December 2023.</p>
+                </div>
+                <div class="bio-col">
+                    <h3>Android</h3>
+                    <p>I started learning Android through a study from my University using Flutter, and made an Android app (Kotlin) for elementary school as a final project for my Bachelor's degree.</p>
+                </div>
+                <div class="bio-col">
+                    <h3>Other</h3>
+                    <p>I learned many languages like Java, HTML, CSS, Python, SQL, and more. You can check them in my CV.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h1>My Projects</h1>
+            <p>Here are a few projects I've worked on. More projects will come.</p>
+            <div id="project-container" class="project-row"></div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h1>Internship at PT. Indomarco Prismatama</h1>
+            <p>I did an internship at PT. Indomarco Prismatama from August to December 2023 as IT Support (QA).</p>
+
+            <div class="experience-carousel">
+                <div class="carousel-images">
+                    <img src="images/magang1.png" alt="Image 1" class="carousel-image">
+                    <img src="images/magang2.png" alt="Image 2" class="carousel-image">
+                    <img src="images/LogoMagang.png" alt="Image 3" class="carousel-image">
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <script src="carousel.js"></script> <!-- Make sure this path is correct -->
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
