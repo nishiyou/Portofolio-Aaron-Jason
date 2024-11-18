@@ -130,7 +130,7 @@ nav .fa{
     }
 }
 
-/*----------bio--------*/
+
 
 .bio{
     width: 80%;
@@ -184,7 +184,7 @@ h3{
 
 
 
-/*---------project--------*/
+
 
 
 .mydata{
@@ -267,36 +267,36 @@ h3{
 }
 
 .experience {
-    text-align: center; /* Center the text horizontally */
+    text-align: center; 
     padding: 50px 20px;
     background-color: #f9f9f9;
 }
 
 .experience h1, .experience p {
     margin: 0 auto;
-    max-width: 800px;  /* Optional: Set a max-width for better control over the text width */
+    max-width: 800px;  
     line-height: 1.6;
 }
 
-/* Carousel Styles */
+
 .experience-carousel {
     position: relative;
-    width: 80%;             /* Set a max-width for the carousel */
-    max-width: 600px;       /* Limit the width of the carousel */
+    width: 80%;            
+    max-width: 600px;     
     margin: 0 auto;
-    overflow: hidden;       /* Hide the images that are outside the container */
-    height: 300px;          /* Set a fixed height */
+    overflow: hidden;       
+    height: 300px;         
 }
 
 .carousel-images {
     display: flex;
-    transition: transform 0.5s ease-in-out;  /* Smooth transition effect */
+    transition: transform 0.5s ease-in-out;  
 }
 
 .carousel-image {
-    width: 100%;            /* Make each image fill the container */
-    height: 100%;           /* Make each image fill the container height */
-    object-fit: cover;      /* Ensure images cover the container without distortion */
+    width: 100%;           
+    height: 100%;           
+    object-fit: cover;      
 }
 
 .carousel-nav {
